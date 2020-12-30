@@ -1,9 +1,0 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-const body_parser_1 = __importDefault(require("body-parser"));
-module.exports = function configureRoutes(options) {
-    options.router.use(body_parser_1.default.json());
-};
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicm91dGVIYW5kbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2JhY2tlbmQvcm91dGVIYW5kbGVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFDQSw4REFBcUM7QUFFckMsaUJBQVMsU0FBUyxlQUFlLENBQUMsT0FBeUM7SUFFekUsT0FBTyxDQUFDLE1BQU0sQ0FBQyxHQUFHLENBQUMscUJBQVUsQ0FBQyxJQUFJLEVBQUUsQ0FBQyxDQUFDO0FBRXhDLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7UGx1Z2luQ29uZmlnLCBQbHVnaW5Sb3V0ZU9wdGlvbnN9IGZyb20gJy4uL0B0eXBlcy9wbHVnaW4nO1xuaW1wb3J0IGJvZHlQYXJzZXIgZnJvbSAnYm9keS1wYXJzZXInO1xuXG5leHBvcnQgPSBmdW5jdGlvbiBjb25maWd1cmVSb3V0ZXMob3B0aW9uczogUGx1Z2luUm91dGVPcHRpb25zPFBsdWdpbkNvbmZpZz4pOiB2b2lkIHtcblxuICBvcHRpb25zLnJvdXRlci51c2UoYm9keVBhcnNlci5qc29uKCkpO1xuXG59O1xuIl19

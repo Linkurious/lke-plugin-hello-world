@@ -1,5 +1,4 @@
-
-.npmrc
 node_modules
 .idea
-hello-world.lke/buildcache/public.tsbuildinfo
+*.lke
+dist
