@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "tsBuildInfoFile": "../../hello-world.lke/buildcache/public.tsbuildinfo",
+    "declarationDir": "../../hello-world.lke/public"
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}

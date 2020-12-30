@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "outDir": "../../hello-world.lke/backend",
+    "tsBuildInfoFile": "../../hello-world.lke/buildcache/backend.tsbuildinfo",
+    "declarationDir": "../../hello-world.lke/backend"
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}
