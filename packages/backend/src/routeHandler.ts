@@ -1,4 +1,4 @@
-import express from 'express';
+import * as express from 'express';
 import type {PluginConfig, PluginRouteOptions} from '@linkurious/rest-client';
 
 export = function configureRoutes(options: PluginRouteOptions<PluginConfig>): void {
