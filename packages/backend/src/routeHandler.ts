@@ -1,9 +1,8 @@
-import bodyParser from 'body-parser';
-
-import {PluginConfig, PluginRouteOptions} from '../@types/plugin';
+import * as express from 'express';
+import type {PluginConfig, PluginRouteOptions} from '@linkurious/rest-client';
 
 export = function configureRoutes(options: PluginRouteOptions<PluginConfig>): void {
-  options.router.use(bodyParser.json());
+  options.router.use(express.json());
   options.router.get('/hello', async (req, res) => {
     try {
       const lkeStatus = await options.getRestClient(req).linkurious.getStatus();
@@ -19,5 +18,15 @@ export = function configureRoutes(options: PluginRouteOptions<PluginConfig>): vo
       res.status(400);
       res.send(JSON.stringify({error: e}));
     }
+  });
+
+  options.parentProcess.postMetadata({
+    actions: [
+      {
+        name: 'Hello world',
+        urlTemplate: '/',
+        access: '*'
+      }
+    ]
   });
 };
